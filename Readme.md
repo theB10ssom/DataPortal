@@ -6,12 +6,17 @@ xml의 경우 `OrderedDict` 형태로 데이터를 불러오고 json의 경우 `
   
 ## Guide
 ---
+```
+pip install dataportal
+```
 사용법은 매우 간단합니다.
 (예시를 위해 기상청 일기도 api를 활용하였습니다.)
 
 아래와 같이 response부분과 데이터 다운로드 부분을 분리하여 할수도 있고
 
 ```
+from dataportal import DataportalApi
+
 url = 'http://apis.data.go.kr/1360000/WthrChartInfoService'
 serviceKey = 'Test'
 operation = 'getSurfaceChart'
@@ -25,6 +30,8 @@ print(api_out.head())
 
 아래와 같이 모든 과정을 한번에 처리할 수도 있습니다.
 ```
+from dataportal import DataportalApi
+
 url = 'http://apis.data.go.kr/1360000/WthrChartInfoService'
 serviceKey = 'Test'
 operation = 'getSurfaceChart'
