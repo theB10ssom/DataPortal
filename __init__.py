@@ -1,1 +1,0 @@
-from .dataportal import DataportalApi
