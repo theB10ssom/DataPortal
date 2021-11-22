@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="dataportal",
-    version="0.0.3",
+    version="0.0.6",
     license='MIT',
     author="Yongmin",
     author_email="jhk3211@icloud.com",
