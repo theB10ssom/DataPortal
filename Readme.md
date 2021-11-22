@@ -25,7 +25,7 @@ params = {'code' : 12, 'time' : '20211118'}
 dataportal = DataportalApi(url, serviceKey, operation, params)
 dataportal.get_request_query()
 api_out = dataportal.parse_response()
-print(api_out.head())
+print(api_out)
 ```
 
 아래와 같이 모든 과정을 한번에 처리할 수도 있습니다.
@@ -39,7 +39,7 @@ params = {'code' : 12, 'time' : '20211118'}
 
 dataportal = DataportalApi(url, serviceKey, operation, params)
 api_out = dataportal.load(verbose=False)
-print(api_out.head())
+print(api_out)
 ```
 
 ## Requires
