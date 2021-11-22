@@ -41,6 +41,17 @@ dataportal = DataportalApi(url, serviceKey, operation, params)
 api_out = dataportal.load(verbose=False)
 print(api_out)
 ```
+필수 파라미터가 없는 경우에 params에 아무것도 주지 않을 수 있습니다.  
+
+```
+url = 'http://api.data.go.kr/openapi'
+serviceKey = 'Test'
+operation = 'tn_pubr_public_cty_park_info_api'
+params = {}
+
+dataportal = DataportalApi(url, serviceKey, operation, params)
+api_out = dataportal.load(verbose=False)
+```
 
 ## Requires
 ---
